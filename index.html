@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div class="typed">
+    <h1 class="element"></h1>
+ </div>  
+
+
+ <div class="parallax-window" data-parallax="scroll" data-image-src="./images/galaxy1.jpg"></div>
+ <div class="parallax-window" data-parallax="scroll" data-image-src="./images/galaxy2.jpg"></div>
+ <div class="parallax-window" data-parallax="scroll" data-image-src="./images/galaxy3.jpg"></div>
+ <div class="parallax-window" data-parallax="scroll" data-image-src="./images/galaxy4.jpg"></div>
+
+<div class="empty"></div>
+
+    <script src="./vendors/jquery.js"></script>
+    <script src="./vendors/parallax.js"></script>
+    <script src="./vendors/typed.js"></script>
+    <script src="App.js"></script>
+ 
+    
+<script>    
+var options = {
+  strings: ['Saidakbar Jamoliddinov', 'Frontend web developer'],
+  typeSpeed: 50,
+  startDelay: 1000 ,
+  backSpeed: 40,
+  loop: true,
+  loopCount: Infinity,
+};
+var typed = new Typed('.element', options);
+    </script>
+
+
+</body> 
+</html>
